@@ -1,0 +1,7 @@
+/.idea
+/build
+
+.DS_Store
+/torresbeat
+/torresbeat.test
+*.pyc

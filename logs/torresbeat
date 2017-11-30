@@ -1,0 +1,54 @@
+2017-11-30T14:13:42+09:00 DBG  [log] Disable stderr logging
+2017-11-30T14:13:42+09:00 INFO Home path: [/Users/1002475/Desktop/workspace/go/test-beats/src/github.com/torreswoo/torresbeat] Config path: [/Users/1002475/Desktop/workspace/go/test-beats/src/github.com/torreswoo/torresbeat] Data path: [/Users/1002475/Desktop/workspace/go/test-beats/src/github.com/torreswoo/torresbeat/data] Logs path: [/Users/1002475/Desktop/workspace/go/test-beats/src/github.com/torreswoo/torresbeat/logs]
+2017-11-30T14:13:42+09:00 DBG  [beat] Beat metadata path: /Users/1002475/Desktop/workspace/go/test-beats/src/github.com/torreswoo/torresbeat/data/meta.json
+2017-11-30T14:13:42+09:00 INFO Metrics logging every 30s
+2017-11-30T14:13:42+09:00 INFO Beat UUID: cd0435d1-e6cc-4ac8-947e-fc6a44b64fe7
+2017-11-30T14:13:42+09:00 INFO Setup Beat: torresbeat; Version: 7.0.0-alpha1
+2017-11-30T14:13:42+09:00 DBG  [beat] Initializing output plugins
+2017-11-30T14:13:42+09:00 DBG  [processors] Processors: 
+2017-11-30T14:13:42+09:00 INFO Elasticsearch url: http://localhost:9200
+2017-11-30T14:13:42+09:00 DBG  [publish] start pipeline event consumer
+2017-11-30T14:13:42+09:00 INFO Beat name: 1002475ui-MacBook-Pro.local
+2017-11-30T14:13:42+09:00 INFO torresbeat start running.
+2017-11-30T14:13:42+09:00 INFO torresbeat is running! Hit CTRL-C to stop it.
+2017-11-30T14:13:43+09:00 DBG  [publish] Publish event: {
+  "@timestamp": "2017-11-30T05:13:43.212Z",
+  "@metadata": {
+    "beat": "torresbeat",
+    "type": "doc",
+    "version": "7.0.0-alpha1"
+  },
+  "type": "1002475ui-MacBook-Pro.local",
+  "counter": 1,
+  "beat": {
+    "hostname": "1002475ui-MacBook-Pro.local",
+    "version": "7.0.0-alpha1",
+    "name": "1002475ui-MacBook-Pro.local"
+  }
+}
+2017-11-30T14:13:43+09:00 INFO Event sent
+2017-11-30T14:13:44+09:00 DBG  [publish] Publish event: {
+  "@timestamp": "2017-11-30T05:13:44.211Z",
+  "@metadata": {
+    "beat": "torresbeat",
+    "type": "doc",
+    "version": "7.0.0-alpha1"
+  },
+  "counter": 2,
+  "type": "1002475ui-MacBook-Pro.local",
+  "beat": {
+    "hostname": "1002475ui-MacBook-Pro.local",
+    "version": "7.0.0-alpha1",
+    "name": "1002475ui-MacBook-Pro.local"
+  }
+}
+2017-11-30T14:13:44+09:00 INFO Event sent
+2017-11-30T14:13:44+09:00 DBG  [elasticsearch] ES Ping(url=http://localhost:9200)
+2017-11-30T14:13:44+09:00 DBG  [elasticsearch] Ping request failed with: Get http://localhost:9200: dial tcp [::1]:9200: getsockopt: connection refused
+2017-11-30T14:13:44+09:00 DBG  [service] Received sigterm/sigint, stopping
+2017-11-30T14:13:44+09:00 DBG  [publish] client: closing acker
+2017-11-30T14:13:44+09:00 DBG  [publish] client: done closing acker
+2017-11-30T14:13:44+09:00 DBG  [publish] client: cancelled 0 events
+2017-11-30T14:13:44+09:00 INFO Total non-zero values:  beat.info.uptime.ms=2743 beat.memstats.gc_next=4194304 beat.memstats.memory_alloc=1556792 beat.memstats.memory_total=3687808 libbeat.config.module.running=0 libbeat.output.type=elasticsearch libbeat.pipeline.clients=0 libbeat.pipeline.events.active=2 libbeat.pipeline.events.published=2 libbeat.pipeline.events.total=2
+2017-11-30T14:13:44+09:00 INFO Uptime: 2.743839657s
+2017-11-30T14:13:44+09:00 INFO torresbeat stopped.
