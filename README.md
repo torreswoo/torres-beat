@@ -2,11 +2,25 @@
 
 Welcome to Torresbeat.
 
-Ensure that this folder is at the following location:
-`${GOPATH}/src/github.com/torreswoo/torresbeat`
-
 ## Getting Started with Torresbeat
 
+### usage
+```
+# create basic
+$ gvm use go1.8
+$ export GOPATH={current dir}
+$ export PATH=$PATH:$GOPATH/bin
+$ go get github.com/elastic/beats
+
+# clone
+$ mkdir -p ${GOPATH}/src/github.com/torreswoo/torresbeat
+$ git clone https://github.com/torreswoo/torresbeat ${GOPATH}/src/github.com/torreswoo/torresbeat
+
+# run
+$ vi torresbeat.yml
+$ make
+$ ./torresbeat -c torresbeat.yml -e -d "*"
+```
 ### Requirements
 
 * [Golang](https://golang.org/dl/) 1.7
